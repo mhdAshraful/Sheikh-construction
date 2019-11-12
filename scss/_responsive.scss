@@ -1,0 +1,58 @@
+// sereen size veriables
+$ol-oldPhones-min: 320px; // Moto 360
+$sm-smallPhones-min:322px;
+$smi-smallPhones-min:600px; //iphone 5
+$md-mediumSmartPhones-min:720px; // iphone 6,7, 
+$tb-tablates-min:768px; // Nexus 4, Tablets
+$lg-smallDesktop-min:992px; // small desktops
+$xl-wideScreens-min:1100px; // Large tablets and desktops
+$xxl-widerScreens-min:1200px;
+
+@mixin ol {
+    @media (max-width: #{$ol-oldPhones-min}) {
+        @content;
+    }
+}
+@mixin sm {
+    @media (min-width: #{$sm-smallPhones-min}) {
+        @content;
+    }
+}
+@mixin smi {
+    @media (min-width: #{$smi-smallPhones-min}) {
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width: #{$md-mediumSmartPhones-min}) {
+        @content;
+    }
+}
+@mixin tb {
+    @media (min-width: #{$tb-tablates-min}) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: #{$lg-smallDesktop-min}) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: #{$xl-wideScreens-min}) {
+        @content;
+    }
+}
+@mixin wxl {
+    @media (min-width: #{$xxl-widerScreens-min}) {
+        @content;
+    }
+}
+// any sizes of screen
+@mixin rwd($screen) {
+    @media (min-width: $screen+'px') {
+        @content;
+    }
+ }
+
+

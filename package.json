@@ -1,0 +1,48 @@
+{
+  "name": "sheikh-construction",
+  "version": "1.0.0",
+  "description": "Construction Business Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o www/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashraf0011/Sheikh-construction.git"
+  },
+  "keywords": [
+    "Construction",
+    "Sheikh",
+    "repair",
+    "tile",
+    "carpet",
+    "renovation",
+    "modern",
+    "redecoration",
+    "rebuilding",
+    "reconstruction",
+    "England",
+    "upgradding",
+    "building",
+    "home",
+    "house",
+    "reftting",
+    "build",
+    "extension",
+    "refurbishment",
+    "builders",
+    "Marble",
+    "floor tiling",
+    "Kitchen Extention"
+  ],
+  "author": "Md Ashraful Islam @SPACEINDEx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashraf0011/Sheikh-construction/issues"
+  },
+  "homepage": "https://github.com/Ashraf0011/Sheikh-construction#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Philosopher|Poiret+One&display=swap&subset=cyrillic');
+.co-info{
+ padding: 16px;   
+// grid view;
+ display: grid;
+ grid-gap: 1rem;
+ grid-template-columns: 1fr 1fr 1fr;
+ 
+ h2{
+    // @import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+    margin-top: 100px;
+    padding: 20px;
+    border-left: 5px;
+    margin-left: 100px;
+    text-align: right;
+    font-family: 'Poiret One', cursive;
+    font-size: 64px;
+    color: $light-Blue-text;
+} 
+.gradient-box {
+    position: relative;
+    $border: 5px;
+    background:$offwhite-background;
+    background-clip: padding-box; /* !importanté */
+    border: solid $border transparent; /* !importanté */
+
+  
+    &:before {
+      content: '';
+      position: absolute;
+      top: 5px; right: 0; bottom: 5px; left: 5px;
+      z-index: -1;
+      margin: -$border; /* !importanté */
+      border-radius: inherit; /* !importanté */
+      background: linear-gradient(to right, red, orange);
+    }
+  }
+ 
+
+#stair{
+     width: 600px;
+     height: 700px;
+ }
+ 
+ p{
+    text-align: left;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 24px;
+ }
+ 
+ #bath{
+     width: 550px;
+ }
+
+
+}

@@ -1,0 +1,20 @@
+// =============================================>> navigation
+@import 'responsive';
+.navbar-brand {
+   
+    line-height: 60px;
+    position: fixed;
+    margin: 0px 46px;
+    color: $megenta-text;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2rem;
+    transition: 0.5s;
+    @include ol { margin:8px 23px; letter-spacing: 1rem;}
+}
+.one-side{
+    -webkit-box-shadow: 0 6px 6px -6px #777;
+    -moz-box-shadow: 0 6px 6px -6px #777;
+         box-shadow: 0 6px 6px -6px #777;
+}
+  

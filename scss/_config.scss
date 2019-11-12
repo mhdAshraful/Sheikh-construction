@@ -1,0 +1,77 @@
+/* RGB variables */ 
+$white-background: rgb(255, 255, 255);
+$offwhite-background: rgb(233,233,235);
+$gray-background: rgb(224, 222, 217);
+$skyblue-background: rgb( 149,217,251);
+// only blue-text, black-text
+$yellow: rgb(249, 221, 74);
+// only use for banners megenta-text,blur-text
+$green-text: rgb(81, 151, 115);
+$black-text: rgb(17,17,17); 
+$blue-text: rgb(8,30,61);
+$light-Blue-text: rgb(65,117,155);
+$megenta-text: rgb(122,32,74);
+//black text backgrould should be $white,$gray
+
+
+// opacity
+$blur: 100px;
+$shadow-opacity: 4;
+$bacground-opacity: 0.95;
+
+// images
+$header-image: url(../assets/images/home-background.jpg);
+
+@mixin colorChange {
+    transition: all 0.5s ease-out;
+} 
+
+@mixin home-background{
+        position: absolute;
+        top:100vh;
+        background:$offwhite-background;
+        // background: $green-text;
+        z-index: 1;
+     
+}
+@mixin service-background{
+        position: absolute;
+        top:200vh;
+        background:$white-background;
+    //    background: $megenta-text;
+        z-index: 1;
+    
+}
+@mixin project-background{
+
+    
+        position: absolute;
+        top:300vh;
+        background: $white-background;
+        z-index: 1;
+    
+}
+@mixin contact-us-background{
+ 
+    
+        position: absolute;
+        top:400vh;
+        background: $white-background;
+        z-index: 1;
+
+}
+// @mixin footer{
+//     position: absolute;
+//         top:400vh;
+//         background: $white-background;
+//         z-index: 1;
+// }
+
+// Text color determiner function
+@function set-text-color($color){
+    @if (lightness($color) > 40 ){
+        @return $black-text;
+    } @else {
+        @return white; 
+    }
+}

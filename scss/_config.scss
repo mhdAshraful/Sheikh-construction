@@ -20,7 +20,9 @@ $shadow-opacity: 4;
 $bacground-opacity: 0.95;
 
 // images
-$header-image: url(../assets/images/home-background.jpg);
+$header-image1: url(../assets/images/home-background.jpg);
+$header-image2: url(../assets/images/banner-2.svg);
+$header-image3: url(../assets/images/banner-3.svg);
 
 @mixin colorChange {
     transition: all 0.5s ease-out;

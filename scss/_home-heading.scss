@@ -1,0 +1,70 @@
+@import 'config';
+
+
+header#home,
+header#home::before {
+  content: '';
+  background: cover 50% 50%;
+
+}
+
+header#home::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background-image: $header-image1;
+  background-size: cover;
+  border-radius: 10px;
+  -webkit-transform-origin: center center 0;
+  -moz-transform-origin: center center 0;
+  -ms-transform-origin: center center 0;
+  -o-transform-origin: center center 0;
+  transform-origin: center center 0;
+  
+  -webkit-transform: translateZ(-4px) scale(2.6);
+  -moz-transform: translateZ(-4px) scale(2.6);
+  -ms-transform: translateZ(-4px) scale(2.6);
+  -o-transform: translateZ(-4px) scale(2.6);
+  transform: translateZ(-4px) scale(2.6);
+  z-index: -10;
+  min-height: 100vh;
+  min-width: 100vw;
+  top: 10px;
+}
+
+// ------------------header end
+
+.drop-shadow {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(10px 30px 20px rgba(0, 0, 0, $shadow-opacity));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: calc(100vh - 10vh);
+    width: calc(100vw - 10vw);
+    z-index: -5;
+  }
+
+  >span {
+    // -------------------------------> heading position
+    top: 60%;
+    left: 70%;
+    position: absolute;
+    z-index: 5;
+    color: $blue-text;
+    @include ol {top: 10%; left: 20%;}
+    @include sm {top: 25%; left: 10%;}
+    @include md {top: 30%; left: 15%;}
+    @include tb {top: 40%; left: 12%;}
+    @include lg {top: 25%; left: 12%;}
+    @include xl {top: 25%; left: 18%;}
+    @include wxl {top: 25%; left: 18%;}
+  }
+}
+

@@ -23,7 +23,6 @@
     background:$offwhite-background;
     background-clip: padding-box; /* !importanté */
     border: solid $border transparent; /* !importanté */
-
   
     &:before {
       content: '';
@@ -40,8 +39,15 @@
 #stair{
      width: 600px;
      height: 700px;
+     
  }
- 
+ .shadow {
+    -moz-box-shadow:    2px 2px 2px 2px rgb(136, 133, 133);
+    -webkit-box-shadow: 2px 2px 2px 2px rgb(136, 133, 133);
+    -ms-box-shadow:        2px 2px 2px 2px rgb(136, 133, 133);
+    -o-box-shadow:         2px 2px 2px 2px rgb(136, 133, 133);
+    box-shadow:         2px 2px 2px 2px rgb(136, 133, 133);
+  }
  p{
     text-align: left;
     font-family: 'Philosopher', sans-serif;
@@ -50,7 +56,13 @@
  
  #bath{
      width: 550px;
+     
  }
-
-
+ .shadow {
+    -moz-box-shadow:    2px 2px 2px 2px rgb(136, 133, 133);
+    -webkit-box-shadow: 2px 2px 2px 2px rgb(136, 133, 133);
+    -ms-box-shadow:        2px 2px 2px 2px rgb(136, 133, 133);
+    -o-box-shadow:         2px 2px 2px 2px rgb(136, 133, 133);
+    box-shadow:         2px 2px 2px 2px rgb(136, 133, 133);
+  }
 }

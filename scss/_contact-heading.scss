@@ -68,3 +68,92 @@ header#contact::after {
   }
 }
 
+#contact-us{
+padding: 50px 20px;
+position: relative;
+background:$skyblue-background;
+}
+#contact-us .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+#contact-us .wrap .pannel-left {
+    display: inline-block;
+    padding-right: 10%;
+    vertical-align: top;
+    width: 70%;
+    line-height: 1.5;
+    text-align: left;
+}
+#contact-us .contact-form {
+    margin-top: 30px;
+}
+* {
+    margin: 0;
+        margin-top: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact-form-field {
+    width: 95%;
+}
+#contact-us .contact-form .contact-form-field {
+    border: 1px solid 
+    #e5e5e5;
+    border-radius: 5px;
+    outline: 0;
+    width: 80%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+input, textarea {
+    font: 13px Roboto,sans-serif;
+        font-size: 13px;
+}
+#contact-us .contact-form .submit-btn {
+    font-size: 16px;
+    padding: 15px 50px;
+}
+.button.v-pixpa-blue {
+    background: 
+#ff4a64;
+color:
+    #fff;
+}
+.margin-t25 {
+    margin-top: 25px;
+}
+.button {
+    padding: 18px 35px;
+    background: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    color: #000;
+    font-size: 15px;
+    letter-spacing: .1em;
+    font-weight: 500;
+    cursor: pointer;
+    -webkit-transition: background .25s ease-in-out;
+    transition: background .25s ease-in-out;
+    font-family: Roboto,sans-serif;
+}
+#contact-us .wrap .pannel-right {
+    width: 100%;
+    padding-top: 40px;
+    border-top: 1px solid 
+    #ccc;
+}
+#contact-us .wrap .pannel-right {
+    text-align: left;
+    display: block;
+    width: 25%;
+    line-height: 1.5;
+}
+.pannel-right {
+    width: 100%;
+    margin: 10% 0;
+}

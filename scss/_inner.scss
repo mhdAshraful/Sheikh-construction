@@ -9,13 +9,14 @@
  h2{
     // @import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
     margin-top: 100px;
-    padding: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
     border-left: 5px;
-    margin-left: 100px;
     text-align: right;
     font-family: 'Poiret One', cursive;
     font-size: 64px;
     color: $light-Blue-text;
+    
 } 
 .gradient-box {
     position: relative;
@@ -35,6 +36,10 @@
     }
   }
  
+  .text{
+    line-height: 2rem;
+    // letter-spacing: 0.2rem;
+  }
 
 #stair{
      width: 600px;
@@ -49,6 +54,7 @@
     box-shadow:         2px 2px 2px 2px rgb(136, 133, 133);
   }
  p{
+
     text-align: left;
     font-family: 'Philosopher', sans-serif;
     font-size: 24px;

@@ -70,13 +70,37 @@
       <main class="contact">
             <section id="contact-us">
                     <div class="wrap">
+
+                              <form name="contact" method="POST" data-netlify="true">
+                                          <p>
+                                            <label>Your Name: <input type="text" name="name" /></label>   
+                                          </p>
+                                          <p>
+                                            <label>Your Email: <input type="email" name="email" /></label>
+                                          </p>
+                                          <p>
+                                            <label>Your Role: <select name="role[]" multiple>
+                                              <option value="leader">Leader</option>
+                                              <option value="follower">Follower</option>
+                                            </select></label>
+                                          </p>
+                                          <p>
+                                            <label>Message: <textarea name="message"></textarea></label>
+                                          </p>
+                                          <p>
+                                            <button type="submit">Send</button>
+                                          </p>
+                                        </form>
+                                        
+
+
                       <!--left pannel start-->
-                      <div class="pannel-left">
+                      <!-- <div class="pannel-left">
                         <h3>Get in Touch</h3>
                         <p>Please fill out the quick form and we will be in touch with lightning speed.</p>
                      
                         <div class="contact-form">
-                          <form method="POST" action="./enquery-handeller.php" accept-charset="UTF-8">
+                          <form method="POST" action="enquery-handeller.php" accept-charset="UTF-8">
 
                              
                               <input type="text" required placeholder="Name" name="name" class="contact-form-field" >
@@ -92,7 +116,7 @@
                         </div>
                               
                         </div>
-                      </div>
+                      </div> -->
                       <!--left pannel end-->
                       <!--left pannel start-->
                       <div class="pannel-right">

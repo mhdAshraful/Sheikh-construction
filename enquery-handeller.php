@@ -1,38 +1,20 @@
 <?php
-	if (isset($_POST["submit"])) {
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$message = $_POST['message'];
-		$from = 'Enqury Page'; 
-		$to = 'mycdu.edu@gmail.com'; 
-		$subject = 'Customer Enquries';
+		$customerName = $_POST['name'];
+		$customerEmail = $_POST['email'];
+		$customerMessage = $_POST['message'];
 		
-		$body ="From: $name\n E-Mail: $email\n Message:\n $message";
-		// // Check if name has been entered
-		// if ($_POST['name']) {
-		// 	$errName = 'Please enter your name';
-		// }
+		$email_from = 'mycdu.edu@gmail.com'; 
+		$email_subject = 'Customer Enquries';
+		$email_body ="New email From: $customerName.\n". 
+						"E-Mail address: $customerEmail\n". 
+							"Enqury about: $customerMessage\n.";
 		
-		// // Check if email has been entered and is valid
-		// if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-		// 	$errEmail = 'Please enter a valid email address';
-		// }
+		$to = 'ashraful.win@icloud.com'; 
 		
-		// //Check if message has been entered
-		// if (!$_POST['message']) {
-		// 	$errMessage = 'Please enter your message';
-		// }
-		// //Check if simple anti-bot test is correct
-		// if ($human !== 5) {
-		// 	$errHuman = 'Your anti-spam is incorrect';
-		// }
-// If there are no errors, send the email
-	if ($_POST['name'] && $_POST['email'] && !$_POST['message']) {
-		if (mail ($to, $subject, $body, $from)) {
-			$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
-		} else {
-			$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
-		}
-	}
-}
+		$headers = "from: $email_from \r\n";
+		$headers .= "Reply to: $customerEmail \r\n";
+		mail($to,$email_subject,$email_body,$headers);
+
+		header("Location: contact.html");
+
 ?>

@@ -74,20 +74,32 @@
                       <div class="pannel-left">
                         <h3>Get in Touch</h3>
                         <p>Please fill out the quick form and we will be in touch with lightning speed.</p>
-                                  <div class="contact-form">
-                          <form method="POST" action="......." accept-charset="UTF-8"><input name="_token" type="hidden" value="">
-                            <input type="hidden" name="_token" value="">
-                            <input type="text" required="" placeholder="Name" name="name" class="contact-form-field">
-                            <input type="email" required="" placeholder="Your email address" class="contact-form-field" name="email">
-                            <textarea required="" placeholder="Message" id="comments" class="contact-form-field" name="comments"></textarea>
-                            <div class="form-input captcha-input contact-captcha">
-                            
-                            </div>
-                            
-                            <button name="login" type="submit" class="submit-btn button v-pixpa-blue margin-t25">Submit</button>
-                            
-              
-                          </form>
+                     
+                        <div class="contact-form">
+                          <form method="POST" action="enquery-handeller.php" accept-charset="UTF-8">
+                              <input name="_token" type="hidden" value="">
+                              <input type="hidden" name="_token" value="">
+                             
+                              <input type="text" required placeholder="Name" name="name" class="contact-form-field" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+                              <?php echo "<p class='text-danger'>$errName</p>";?>
+                              <input type="email" required placeholder="Your email address" class="contact-form-field" name="email" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+                              <?php echo "<p class='text-danger'>$errEmail</p>";?>
+                              <textarea required placeholder="Type you enqueries here, Please Don't forget to add your Phone Number and best available time. We will get in touch ASAP. --Sheikh Construction Team" id="comments" class="contact-form-field" name="comments" value="<?php echo htmlspecialchars($_POST['message']);?>"></textarea>
+                              <?php echo "<p class='text-danger'>$errMessage</p>";?>
+                              <div class="contact-form">
+                                          <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+                                          <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+                                                <?php echo "<p class='text-danger'>$errHuman</p>";?>
+                                          </div>
+                                    </div>
+                              <button name="login" type="submit" class="submit-btn button v-pixpa-blue margin-t25">Submit</button>
+                              <?php echo $result; ?>	
+                              </form>
+                        </div>
+                              
+                              
+                              
                           <strong><font color="green"></font></strong>
                         </div>
                       </div>

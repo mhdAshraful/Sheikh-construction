@@ -31,15 +31,14 @@ $header-image3: url(../assets/images/banner-3.svg);
 @mixin home-background{
         position: absolute;
         top:100vh;
-        background:$offwhite-background;
-        // background: $green-text;
+        background:$skyblue-background;
         z-index: 1;
      
 }
 @mixin service-background{
         position: absolute;
         top:200vh;
-        background:$white-background;
+        background:$skyblue-background;
     //    background: $megenta-text;
         z-index: 1;
     
@@ -49,7 +48,7 @@ $header-image3: url(../assets/images/banner-3.svg);
     
         position: absolute;
         top:300vh;
-        background: $white-background;
+        background:$skyblue-background;
         z-index: 1;
     
 }
@@ -58,7 +57,7 @@ $header-image3: url(../assets/images/banner-3.svg);
     
         position: absolute;
         top:400vh;
-        background: $white-background;
+        background:$skyblue-background;
         z-index: 1;
 
 }

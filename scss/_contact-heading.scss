@@ -68,17 +68,17 @@ header#contact::after {
   }
 }
 
-#contact-us{
+.contact #contact-us{
 padding: 50px 20px;
 position: relative;
 background:$skyblue-background;
 }
-#contact-us .wrap {
+.contact  #contact-us .wrap {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
-#contact-us .wrap .pannel-left {
+.contact  #contact-us .wrap .pannel-left {
     display: inline-block;
     padding-right: 10%;
     vertical-align: top;
@@ -86,19 +86,13 @@ background:$skyblue-background;
     line-height: 1.5;
     text-align: left;
 }
-#contact-us .contact-form {
+.contact  #contact-us .contact-form {
     margin-top: 30px;
 }
-* {
-    margin: 0;
-        margin-top: 0px;
-    padding: 0;
-    box-sizing: border-box;
-}
-.contact-form-field {
+.contact .contact-form-field {
     width: 95%;
 }
-#contact-us .contact-form .contact-form-field {
+.contact  #contact-us .contact-form .contact-form-field {
     border: 1px solid 
     #e5e5e5;
     border-radius: 5px;

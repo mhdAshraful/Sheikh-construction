@@ -1,10 +1,6 @@
 @charset "UTF-8";
 /* RGB variables */
 @import url("https://fonts.googleapis.com/css?family=Philosopher|Poiret+One&display=swap&subset=cyrillic");
-.topmargin {
-  margin-top: 20px;
-  padding: 20px; }
-
 .navbar-brand {
   line-height: 60px;
   position: fixed;
@@ -64,11 +60,11 @@
     width: 600px;
     height: 700px; }
   .co-info .shadow {
-    -moz-box-shadow: 2px 2px 10px 4px black;
-    -webkit-box-shadow: 2px 2px 10px 4px black;
-    -ms-box-shadow: 2px 2px 10px 4px black;
-    -o-box-shadow: 2px 2px 10px 4px black;
-    box-shadow: 2px 2px 10px 4px black; }
+    -moz-box-shadow: 2px 2px 4px 4px black;
+    -webkit-box-shadow: 2px 2px 4px 4px black;
+    -ms-box-shadow: 2px 2px 4px 4px black;
+    -o-box-shadow: 2px 2px 4px 4px black;
+    box-shadow: 2px 2px 4px 4px black; }
   .co-info p {
     text-align: left;
     font-family: 'Philosopher', sans-serif;
@@ -76,11 +72,11 @@
   .co-info #bath {
     width: 550px; }
   .co-info .shadow {
-    -moz-box-shadow: 2px 2px 10px 4px black;
-    -webkit-box-shadow: 2px 2px 10px 4px black;
-    -ms-box-shadow: 2px 2px 10px 4px black;
-    -o-box-shadow: 2px 2px 10px 4px black;
-    box-shadow: 2px 2px 10px 4px black; }
+    -moz-box-shadow: 2px 2px 4px 4px black;
+    -webkit-box-shadow: 2px 2px 4px 4px black;
+    -ms-box-shadow: 2px 2px 4px 4px black;
+    -o-box-shadow: 2px 2px 4px 4px black;
+    box-shadow: 2px 2px 4px 4px black; }
 
 /* RGB variables */
 header#home,
@@ -356,12 +352,12 @@ header#service::after {
     position: absolute;
     height: calc(100vh - 10vh);
     width: calc(100vw - 10vw);
-    z-index: -5; }
+    z-index: -10; }
   .drop-shadow > span {
     top: 60%;
     left: 70%;
     position: absolute;
-    z-index: 5;
+    z-index: -5;
     color: #081e3d; }
     @media (max-width: 320px) {
       .drop-shadow > span {
@@ -391,6 +387,10 @@ header#service::after {
       .drop-shadow > span {
         top: 25%;
         left: 18%; } }
+
+.service .topmargin {
+  margin-top: 20px;
+  padding: 20px; }
 
 *,
 *:before,
@@ -457,7 +457,7 @@ header {
 .home {
   position: absolute;
   top: 100vh;
-  background: #95d9fb;
+  background: white;
   z-index: 1;
   color: #111111;
   height: 155vh;

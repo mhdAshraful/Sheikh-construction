@@ -31,7 +31,7 @@ $header-image3: url(../assets/images/banner-3.svg);
 @mixin home-background{
         position: absolute;
         top:100vh;
-        background:$skyblue-background;
+        background:$white-background;
         z-index: 1;
      
 }
@@ -39,13 +39,11 @@ $header-image3: url(../assets/images/banner-3.svg);
         position: absolute;
         top:200vh;
         background:$skyblue-background;
-    //    background: $megenta-text;
         z-index: 1;
     
 }
 @mixin project-background{
 
-    
         position: absolute;
         top:300vh;
         background:$skyblue-background;

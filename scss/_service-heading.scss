@@ -48,7 +48,7 @@ header#service::after {
     position: absolute;
     height: calc(100vh - 10vh);
     width: calc(100vw - 10vw);
-    z-index: -5;
+    z-index: -10;
   }
 
   >span {
@@ -56,7 +56,7 @@ header#service::after {
     top: 60%;
     left: 70%;
     position: absolute;
-    z-index: 5;
+    z-index: -5;
     color: $blue-text;
     @include ol {top: 10%; left: 20%;}
     @include sm {top: 25%; left: 10%;}
@@ -67,4 +67,11 @@ header#service::after {
     @include wxl {top: 25%; left: 18%;}
   }
 }
+.service{
 
+    .topmargin{
+      margin-top: 20px;
+      padding: 20px;
+  }
+
+}
